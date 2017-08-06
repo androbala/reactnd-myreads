@@ -91,7 +91,7 @@ class BooksSearch extends Component {
                   </div>
                   <div className="book-title">{book.title}</div>
                   <div className="book-authors">
-                    {book.length>0 && book.authors.map((author, i) => (
+                    {book.authors.length>0 && book.authors.map((author, i) => (
                       author
                     ))}
                   </div>

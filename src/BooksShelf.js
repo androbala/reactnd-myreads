@@ -26,8 +26,8 @@ class BooksShelf extends Component {
             <h2 className="bookshelf-title">{shelfTitle}</h2>
             <div className="bookshelf-books">
               <ol className="books-grid">
-                {booksOnShelf && booksOnShelf.length>0 && booksOnShelf.map((book) => (
-                  <li key={book.id}>
+                {booksOnShelf && booksOnShelf.length>0 && booksOnShelf.map((book, index) => (
+                  <li key={index}>
                     <div className="book">
                       <div className="book-top">
                         <div className="book-cover" style={{ backgroundImage: `url(${(book.imageLinks && book.imageLinks.smallThumbnail) ? book.imageLinks.smallThumbnail : ''})` }}></div>

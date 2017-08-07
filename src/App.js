@@ -46,7 +46,6 @@ class BooksApp extends React.Component {
             myBooks={this.state.myBooks}
             onShelfChange={(shelf, book) => {
               this.onShelfChange(shelf, book)
-              history.push('/')
             }}
           />
         )}/>
